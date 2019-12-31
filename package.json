@@ -1,0 +1,33 @@
+{
+    "name": "v06",
+    "version": "1.0.0",
+    "description": "",
+    "main": "webpack.config.js",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.7.7",
+        "@babel/preset-env": "^7.7.7",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-syntax-dynamic-import": "^6.18.0",
+        "babel-polyfill": "^6.26.0",
+        "html-webpack-plugin": "^3.2.0",
+        "vue": "^2.6.11",
+        "vue-html-loader": "^1.2.4",
+        "vue-loader": "^15.8.3",
+        "vue-router": "^3.1.3",
+        "vue-style-loader": "^4.1.2",
+        "vue-template-compiler": "^2.6.11",
+        "vuex": "^3.1.2",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.10.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack-dev-server --env.development  --open",
+        "build": "webpack --env.production  --open"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

@@ -9,7 +9,7 @@ module.exports = {
         filename: 'bundle.min.js'
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: 'index.html' }),
+        new HtmlWebpackPlugin({ template: 'index.html', filename: 'test.html' }),
         new VueLoaderPlugin()
     ],
 }

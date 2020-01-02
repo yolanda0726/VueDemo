@@ -8,7 +8,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: 'index.html' }),
+        new HtmlWebpackPlugin({ template: 'index.html', filename: 'index.html' }),
         new VueLoaderPlugin()
     ],
     devtool: 'source-map'

@@ -1,6 +1,6 @@
 const path = require('path')
 
-module.exports = function(args, env) {
+module.exports = function(env, args) {
     env = env || {};
 
     return {
@@ -9,7 +9,8 @@ module.exports = function(args, env) {
         module: {
             rules: [
                 { test: /\.vue$/i, use: 'vue-loader' },
-                { test: /\.js/i, use: 'babel-loader', exclude: /node_modules/ }
+                { test: /\.js$/i, use: 'babel-loader', exclude: /node_modules/ },
+                { test: /\.css$/i, use: ['style-loader', 'css-loader'] }
             ]
         },
         resolve: {
